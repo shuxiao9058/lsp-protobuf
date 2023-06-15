@@ -1,0 +1,20 @@
+#+title: lsp-protobuf
+
+Protobuf language server with [[https://github.com/bufbuild/buf-language-server][bufls]].
+
+* Installation
+
+* straight-use-package
+
+Add following code to your configuration.
+
+#+begin_src elisp
+(use-package lsp-protobuf 
+  :straight (:host github :repo "shuxiao9058/lsp-protobuf") 
+  :custom
+  (lsp-protobuf-bufls-server-path "/usr/local/gopath/bin/bufls"))
+#+end_src
+
+* License
+
+Licensed under GPLv3.
